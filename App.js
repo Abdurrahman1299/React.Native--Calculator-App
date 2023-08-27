@@ -34,7 +34,7 @@ export default function App() {
           : { backgroundColor: "#181818" },
       ]}
     >
-      <StatusBar style="auto" />
+      <StatusBar style={curTheme === "light" ? "dark" : "light"} />
       <TouchableOpacity
         style={[
           styles.toggleThemes,
